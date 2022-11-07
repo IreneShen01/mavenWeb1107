@@ -21,7 +21,7 @@ String query = "SELECT productCode  as  code , quantityInStock  as  quantity, pr
             conn = DriverManager.getConnection(url,username,password);
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
-            while (rs.next()) {
+            while (rs.next()) { //迴圈
                 Product ur = new Product();
                 ur.setCode(rs.getString("code"));
                 ur.setQuantity(rs.getInt("quantity"));
