@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class ProductDAO {
-	public ArrayList getProductList() {
+	public ArrayList getProductList() { //連線
 		String url="jdbc:mysql://localhost:3306/classicmodels?serverTimezone=Asia/Taipei";
 		String username = "root";
         String password = "1234";
