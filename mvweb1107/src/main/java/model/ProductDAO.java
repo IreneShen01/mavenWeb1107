@@ -30,7 +30,7 @@ String query = "SELECT productCode  as  code , quantityInStock  as  quantity, pr
                 list.add(ur);
             }
             rs.close();//都要記得關起來
-            conn.close();
+            conn.close();//都要記得關起來
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
